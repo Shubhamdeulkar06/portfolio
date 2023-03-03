@@ -1,7 +1,7 @@
 import React from "react";
 
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
+import todo from "../assets/portfolio/todo.png";
+import photoGallary from "../assets/portfolio/photogallary.png";
 
 import weathervjs from "../assets/portfolio/weathervjs.png";
 
@@ -10,18 +10,21 @@ const Portfolio = () => {
     {
       id: 1,
       src: weathervjs,
+      href1: "https://my-weather-app-06.netlify.app",
+      href2: "https://github.com/Shubhamdeulkar06/weatherApp",
     },
     {
       id: 2,
-      src: reactParallax,
+      src: photoGallary,
+      href1: "https://photo-gallary-06.netlify.app",
+      href2: "https://github.com/Shubhamdeulkar06/photo-gallary",
     },
     {
       id: 3,
-      src: navbar,
-    },
-    {
-      id: 4,
-      src: navbar,
+      src: todo,
+      href1: "https://simple-todo-list-react-js.netlify.app/",
+      href2:
+        "https://github.com/Shubhamdeulkar06/Fullstack/tree/main/React/todo-list",
     },
   ];
   return (
@@ -36,8 +39,8 @@ const Portfolio = () => {
           </p>
           <p className="py-6">Check out my work</p>
         </div>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src }) => (
+        <div className="px-1 grid sm:grid-cols-2 md:grid-cols-3 gap-8  ">
+          {portfolios.map(({ id, src, href1, href2 }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -45,12 +48,22 @@ const Portfolio = () => {
                 className="rounded-md duration-200 hover:scale-105"
               />
               <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <a
+                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                  href={href1}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Demo
-                </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                </a>
+                <a
+                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                  href={href2}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Code
-                </button>
+                </a>
               </div>
             </div>
           ))}

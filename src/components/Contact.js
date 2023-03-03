@@ -1,10 +1,11 @@
 import React from "react";
+import SocialLinksMobile from "./SocialLinksMobile";
 
 const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full  bg-gradient-to-b from-black to-gray-800 p-4 text-white pt-24 md:h-screen md:pt-16 lg:pt-0"
+      className="w-full  bg-gradient-to-b from-black to-gray-800 p-4 text-white pt-16 md:h-screen md:pt-16 lg:pt-0"
     >
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full max-h-max">
         <div className="pb-8">
@@ -42,6 +43,7 @@ const Contact = () => {
             </button>
           </form>
         </div>
+        <SocialLinksMobile />
       </div>
     </div>
   );

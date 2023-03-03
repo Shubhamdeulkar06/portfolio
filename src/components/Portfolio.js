@@ -1,16 +1,15 @@
 import React from "react";
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import installNode from "../assets/portfolio/installNode.jpg";
+
 import navbar from "../assets/portfolio/navbar.jpg";
 import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
+
+import weathervjs from "../assets/portfolio/weathervjs.png";
 
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: arrayDestruct,
+      src: weathervjs,
     },
     {
       id: 2,
@@ -22,15 +21,7 @@ const Portfolio = () => {
     },
     {
       id: 4,
-      src: reactSmooth,
-    },
-    {
-      id: 5,
-      src: installNode,
-    },
-    {
-      id: 6,
-      src: reactWeather,
+      src: navbar,
     },
   ];
   return (
@@ -39,7 +30,7 @@ const Portfolio = () => {
       className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen "
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-        <div className="pb-8">
+        <div className="pb-8 mt-24 md:mt-24">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Portfolio
           </p>

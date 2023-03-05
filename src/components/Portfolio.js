@@ -23,8 +23,7 @@ const Portfolio = () => {
       id: 3,
       src: todo,
       href1: "https://simple-todo-list-react-js.netlify.app/",
-      href2:
-        "https://github.com/Shubhamdeulkar06/Fullstack/tree/main/React/todo-list",
+      href2: "https://github.com/Shubhamdeulkar06/todo-list",
     },
   ];
   return (

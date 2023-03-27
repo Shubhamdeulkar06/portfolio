@@ -4,6 +4,7 @@ import todo from "../assets/portfolio/todo.png";
 import photoGallary from "../assets/portfolio/photogallary.png";
 
 import weathervjs from "../assets/portfolio/weathervjs.png";
+import responsive from "../assets/portfolio/responsive.png";
 
 const Portfolio = () => {
   const portfolios = [
@@ -24,6 +25,13 @@ const Portfolio = () => {
       src: todo,
       href1: "https://simple-todo-list-react-js.netlify.app/",
       href2: "https://github.com/Shubhamdeulkar06/todo-list",
+    },
+    {
+      id: 4,
+      src: responsive,
+      href1: "https://responsive-website-dev06.netlify.app/",
+      href2:
+        "https://github.com/Shubhamdeulkar06/Fullstack/tree/main/Practice/html/responsive-website",
     },
   ];
   return (

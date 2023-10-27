@@ -3,17 +3,17 @@ import React from "react";
 import todo from "../assets/portfolio/todo.png";
 import photoGallary from "../assets/portfolio/photogallary.png";
 
-import weathervjs from "../assets/portfolio/weathervjs.png";
+// import weathervjs from "../assets/portfolio/weathervjs.png";
 import responsive from "../assets/portfolio/responsive.png";
 
 const Portfolio = () => {
   const portfolios = [
-    {
-      id: 1,
-      src: weathervjs,
-      href1: "https://my-weather-app-06.netlify.app",
-      href2: "https://github.com/Shubhamdeulkar06/weatherApp",
-    },
+    // {
+    //   id: 1,
+    //   src: weathervjs,
+    //   href1: "https://my-weather-app-06.netlify.app",
+    //   href2: "https://github.com/Shubhamdeulkar06/weatherApp",
+    // },
     {
       id: 2,
       src: photoGallary,

@@ -5,6 +5,7 @@ import photoGallary from "../assets/portfolio/photogallary.png";
 
 // import weathervjs from "../assets/portfolio/weathervjs.png";
 import responsive from "../assets/portfolio/responsive.png";
+import techblog from "../assets/portfolio/techblogs.png";
 
 const Portfolio = () => {
   const portfolios = [
@@ -32,6 +33,12 @@ const Portfolio = () => {
       href1: "https://responsive-website-dev06.netlify.app/",
       href2:
         "https://github.com/Shubhamdeulkar06/Fullstack/tree/main/Practice/html/responsive-website",
+    },
+    {
+      id: 5,
+      src: techblog,
+      href1: "https://techblogs-dev06.netlify.app/",
+      href2: "https://github.com/Shubhamdeulkar06/techBlog",
     },
   ];
   return (

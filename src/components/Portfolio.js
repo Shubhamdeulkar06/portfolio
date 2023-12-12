@@ -31,8 +31,7 @@ const Portfolio = () => {
       id: 4,
       src: responsive,
       href1: "https://responsive-website-dev06.netlify.app/",
-      href2:
-        "https://github.com/Shubhamdeulkar06/Fullstack/tree/main/Practice/html/responsive-website",
+      href2: "https://github.com/Shubhamdeulkar06/responsive-ui-01",
     },
     {
       id: 5,

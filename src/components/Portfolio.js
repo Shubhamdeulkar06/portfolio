@@ -6,6 +6,7 @@ import photoGallary from "../assets/portfolio/photogallary.png";
 // import weathervjs from "../assets/portfolio/weathervjs.png";
 import responsive from "../assets/portfolio/responsive.png";
 import techblog from "../assets/portfolio/techblogs.png";
+import netflix from "../assets/portfolio/netflixCoverr.png";
 
 const Portfolio = () => {
   const portfolios = [
@@ -20,24 +21,35 @@ const Portfolio = () => {
       src: photoGallary,
       href1: "https://photo-gallary-06.netlify.app",
       href2: "https://github.com/Shubhamdeulkar06/photo-gallary",
+      status: "Project Complete",
     },
     {
       id: 3,
       src: todo,
       href1: "https://simple-todo-list-react-js.netlify.app/",
       href2: "https://github.com/Shubhamdeulkar06/todo-list",
+      status: "Project Complete",
     },
     {
       id: 4,
       src: responsive,
       href1: "https://responsive-website-dev06.netlify.app/",
       href2: "https://github.com/Shubhamdeulkar06/responsive-ui-01",
+      status: "Project Complete",
     },
     {
       id: 5,
       src: techblog,
       href1: "https://techblogs-dev06.netlify.app/",
       href2: "https://github.com/Shubhamdeulkar06/techBlog",
+      status: "Project Complete",
+    },
+    {
+      id: 6,
+      src: netflix,
+      href1: "https://netflix-dev06.netlify.app/",
+      href2: "https://github.com/Shubhamdeulkar06/netflix-react",
+      status: "Working on this project",
     },
   ];
   return (
@@ -53,8 +65,12 @@ const Portfolio = () => {
           <p className="py-6">Check out my work</p>
         </div>
         <div className="px-1 grid sm:grid-cols-2 md:grid-cols-3 gap-8  ">
-          {portfolios.map(({ id, src, href1, href2 }) => (
-            <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
+          {portfolios.map(({ id, src, href1, href2, status }) => (
+            <div
+              key={id}
+              className="shadow-md shadow-gray-600 rounded-lg"
+              title={status}
+            >
               <img
                 src={src}
                 alt=""

@@ -7,6 +7,7 @@ import photoGallary from "../assets/portfolio/photogallary.png";
 import responsive from "../assets/portfolio/responsive.png";
 import techblog from "../assets/portfolio/techblogs.png";
 import netflix from "../assets/portfolio/netflixCoverr.png";
+import youtube from "../assets/portfolio/youtube.png";
 
 const Portfolio = () => {
   const portfolios = [
@@ -49,6 +50,13 @@ const Portfolio = () => {
       src: netflix,
       href1: "https://netflix-dev06.netlify.app/",
       href2: "https://github.com/Shubhamdeulkar06/netflix-react",
+      status: "Working on this project",
+    },
+    {
+      id: 7,
+      src: youtube,
+      href1: "https://my-youtube-dev06.netlify.app//",
+      href2: "https://github.com/Shubhamdeulkar06/youtube-react",
       status: "Working on this project",
     },
   ];

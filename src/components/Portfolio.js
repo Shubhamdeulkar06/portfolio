@@ -48,7 +48,7 @@ const Portfolio = () => {
     {
       id: 6,
       src: netflix,
-      href1: "https://netflix-dev06.netlify.app/",
+      href1: "https://chillflix-dev06.netlify.app/",
       href2: "https://github.com/Shubhamdeulkar06/netflix-react",
       status: "Working on this project",
     },
